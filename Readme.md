@@ -4,6 +4,29 @@
 
 This repository contains solutions for Node.js Fundamentals assignment. The assignment covers various Node.js core APIs including File System, CLI, Modules, Hash, Streams, Zlib, Worker Threads, and Child Processes.
 
+## Getting Started
+
+1. **Fork this repository**
+   
+   Click the "Fork" button at the top right of this page: https://github.com/AlreadyBored/node-nodejs-fundamentals
+
+2. **Clone your fork**
+   
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/node-nodejs-fundamentals.git
+   cd node-nodejs-fundamentals
+   ```
+
+3. **Install dependencies** (if any added in the future)
+   
+   ```bash
+   npm install
+   ```
+
+4. **Start implementing the tasks**
+   
+   Each file in the `src/` directory contains a function template with comments describing what needs to be implemented.
+
 ## Requirements
 
 - Node.js version: >=24.10.0
@@ -50,5 +73,12 @@ This repository contains solutions for Node.js Fundamentals assignment. The assi
 ### Child Processes (src/cp)
 
 - `npm run cp:execCommand` - Execute command in child process
+
+## Submission
+
+1. Implement all the required functionality in the corresponding files
+2. Test your solutions using the npm scripts provided
+3. Commit your changes to your forked repository
+4. Submit the link to your repository for review
 
 ## !!! Please don't submit Pull Requests to this repository !!!

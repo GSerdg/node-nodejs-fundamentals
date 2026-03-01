@@ -26,13 +26,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/node-nodejs-fundamentals.git"
+    "url": "git+https://github.com/AlreadyBored/node-nodejs-fundamentals.git"
   },
   "keywords": [
     "nodejs",
     "fundamentals",
     "assignments"
   ],
-  "author": "",
+  "author": "alreadybored",
   "license": "ISC"
 }
