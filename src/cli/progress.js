@@ -3,9 +3,9 @@ import { stdin as input, stdout as output, argv } from "node:process";
 
 function hexToAnsi(hex) {
   const num = [
-    Number.parseInt(hex.slice(0, 2), 16),
-    Number.parseInt(hex.slice(2, 4), 16),
-    Number.parseInt(hex.slice(4, 6), 16),
+    Number.parseInt(hex.slice(1, 3), 16),
+    Number.parseInt(hex.slice(3, 5), 16),
+    Number.parseInt(hex.slice(5, 7), 16),
   ];
 
   return `\x1b[38;2;${num[0]};${num[1]};${num[2]}m`;
@@ -13,7 +13,7 @@ function hexToAnsi(hex) {
 
 function getArgsValues() {
   const isOnlyDigits = (str) => /^\d+$/.test(str);
-  const isStrictHex = (str) => /^[0-9A-Fa-f]{6}$/.test(str);
+  const isStrictHex = (str) => /^#[0-9A-Fa-f]{6}$/.test(str);
 
   const DEFAULT_VALUES = {
     duration: 5000,
