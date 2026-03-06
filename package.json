@@ -17,7 +17,7 @@
     "modules:dynamic": "node src/modules/dynamic.js",
     "hash:verify": "node src/hash/verify.js",
     "streams:lineNumberer": "node -e \"process.stdout.write('hello\\nworld')\" | node src/streams/lineNumberer.js",
-    "streams:filter": "echo 'hello\nworld\ntest' | node src/streams/filter.js --pattern test",
+    "streams:filter": "node -e \"process.stdout.write('hello\\nworld\\ntest')\" | node src/streams/filter.js --pattern test",
     "streams:split": "node src/streams/split.js --lines 10",
     "zip:compressDir": "node src/zip/compressDir.js",
     "zip:decompressDir": "node src/zip/decompressDir.js",

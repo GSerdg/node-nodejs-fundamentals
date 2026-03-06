@@ -6,6 +6,16 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+function getArgValue(flag) {
+  const args = process.argv.slice(2);
+  const index = args.indexOf(flag);
+
+  if (index !== -1 && args[index + 1] && !args[index + 1].startsWith("--")) {
+    return args[index + 1];
+  }
+  return 'txt';
+}
+
 const findByExt = async () => {
   const BASE_PATH = join("./home/user");
 
@@ -23,7 +33,7 @@ const findByExt = async () => {
     throw new Error("FS operation failed");
   }
 
-  const extArgument = `.${process.argv.at(-1)}`;
+  const extArgument = `.${getArgValue('--ext')}`;
 
   const searchFiles = async (path) => {
     const currentPath = join(BASE_PATH, path);

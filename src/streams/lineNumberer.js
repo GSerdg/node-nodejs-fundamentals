@@ -6,7 +6,6 @@ const lineNumberer = () => {
 
   const transform = new Transform({
     transform(chunk, _, callback) {
-      console.log('chunk', chunk.toString())
       const tmp = chunk.toString();
 
       const lines = tmp.split("\n");
@@ -21,9 +20,9 @@ const lineNumberer = () => {
 
   pipeline(input, transform, output, (err) => {
     if (err) {
-      console.error("Pipeline failed.", err);
+      console.error('failed', err);
     } else {
-      console.log("Pipeline succeeded.");
+      console.log('completed');
     }
   });
 };
