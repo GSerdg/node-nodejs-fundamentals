@@ -13,7 +13,7 @@ function getArgValue(flag) {
   if (index !== -1 && args[index + 1] && !args[index + 1].startsWith("--")) {
     return args[index + 1];
   }
-  return 'txt';
+  return "txt";
 }
 
 const findByExt = async () => {
@@ -33,7 +33,7 @@ const findByExt = async () => {
     throw new Error("FS operation failed");
   }
 
-  const extArgument = `.${getArgValue('--ext')}`;
+  const extArgument = `.${getArgValue("--ext")}`;
 
   const searchFiles = async (path) => {
     const currentPath = join(BASE_PATH, path);

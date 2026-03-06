@@ -18,7 +18,7 @@
     "hash:verify": "node src/hash/verify.js",
     "streams:lineNumberer": "node -e \"process.stdout.write('hello\\nworld')\" | node src/streams/lineNumberer.js",
     "streams:filter": "node -e \"process.stdout.write('hello\\nworld\\ntest')\" | node src/streams/filter.js --pattern test",
-    "streams:split": "node src/streams/split.js --lines 10",
+    "streams:split": "node src/streams/split.js --lines 40",
     "zip:compressDir": "node src/zip/compressDir.js",
     "zip:decompressDir": "node src/zip/decompressDir.js",
     "wt:main": "node src/wt/main.js",
